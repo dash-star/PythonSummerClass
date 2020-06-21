@@ -2,28 +2,54 @@
 2. Type cd ~ and press enter.
 3. Type pwd and press enter.
     a. What does the terminal output?
+    /home/bryan
     b. Briefly describe what pwd does.
+    pwd is a command that tells you what directory you're currently in
     c. What does ~ mean in linux terminal?
+    Tilde with cd means to go back to home directory, in this case the one above
 
 4. type cd / and press enter.
     a. Type cd .. and press enter
     b. Type pwd and press enter
     c. Repeat step a and b.
     d. Which directory are you in?
+    There seems to be no directory, as it only prints "/"
 
 5. What is the difference between the home directory and the root directory?
+    Root directory is the topmost directory of the terminal, which guides how the program should go
+    Home directory is the "base of operations" for a computer to utilize the files in this computer
+    To go to home directory, use "~", for root directory, use "/"
 
 6. Type hello. What does the terminal output?
+
+Command 'hello' not found, but can be installed with:
+
+sudo apt install hello
+sudo apt install hello-traditional
+
     a. Now type alias hello='echo hello <NAME>', then press enter. Remember to replace <NAME> w/ a random name
     b. Now type hello. What does the terminal output?
 
+hello Bryan
+
 7. Press the up and down arrow keys. What do you notice?
+I noticed that the previous commands of the terminal that I typed in showed up.
 
 8. Go to https://aboutalan.herokuapp.com/reference%20guides/commands.txt
     a. Describe how to build and run "Sandbox.java" in terminal.
+    First, I need to make sure that I have Java to run and an openjdk 8
+    Then I use the command to build a Java file: $javac *.java
+    Next I use this command to execute a Java file: $java <MAIN_FILE>
+    As long as Sandbox.java exists in the Java pathfile and directory, the program should run
     b. Describe how to do build and run "Sandbox.java" in makefile using "build" and "run" tags.
         - In makefile:
-
+        I use the "command" tag and alternatively "command $(ARG)". Tag1 requires an argument
         - In terminal:
+        These commands are use to make tags to help build and run Sandbox.java:
+        $ make tag
+        $ make tag1 ARG=<VALUE>
+        Likewise, tag1 requires an argument to run
 
 9. Type telnet towel.blinkenlights.nl and press enter. Recognize something?
+The terminal prints out ASCII text that makes up the first shown Star Wars movie:
+Star Wars Episode IV: A New Hope
